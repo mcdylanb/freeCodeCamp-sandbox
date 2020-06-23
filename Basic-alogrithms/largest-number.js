@@ -1,14 +1,22 @@
 const largestOfFour = arr => {
+  //where we gonna place our list of largest numbers
   let listOfLN = [];
+
+  //loops around the array
   for (x = 0; x < arr.length; x++) {
     let largestNumber = 0;
+    //loops around the subarray of the lopped array
     for (y = 0; y < arr.length; y++) {
+      //checks if the looped number of the subaaray is bigger then the initial and changes once true
       if (arr[x][y] > largestNumber) {
         largestNumber = arr[x][y];
       }
     }
+    //puts all largestNumber of each array into a new array
     listOfLN.push(largestNumber);
   }
+
+  //copies the list and returns the answer
   arr = listOfLn;
   return arr;
 };
