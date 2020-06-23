@@ -4,9 +4,9 @@ const largestOfFour = arr => {
 
   //loops around the array
   for (x = 0; x < arr.length; x++) {
-    let largestNumber = 0;
+    let largestNumber = arr[x][0];
     //loops around the subarray of the lopped array
-    for (y = 0; y < arr[x].length; y++) {
+    for (y = 1; y < arr[x].length; y++) {
       //checks if the looped number of the subaaray is bigger then the initial and changes once true
       if (arr[x][y] > largestNumber) {
         largestNumber = arr[x][y];
