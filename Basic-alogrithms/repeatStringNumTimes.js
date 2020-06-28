@@ -14,5 +14,6 @@ const repeatStringNumTimes = (str, num) => {
   return str;
 };
 
+// test
 console.log(repeatStringNumTimes("*", 10));
-// console.log(repeatStringNumTimes("abc", -3));
+console.log(repeatStringNumTimes("abc", -3));
