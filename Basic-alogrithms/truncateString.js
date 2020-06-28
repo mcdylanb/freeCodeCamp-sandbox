@@ -1,11 +1,17 @@
 const truncateString = (str, num) => {
+  let newStr = "";
   console.log(str.length);
   if (str.length > num) {
     console.log("the string is too long");
+    newStr = str.substring(0, num);
+    console.log(`substring: ${newStr}`);
+    newStr += "...";
+    console.log(`substring: ${newStr}`);
   } else {
-    console.log("the string is alright.. printing...");
+    newStr = str;
   }
 
+  str = newStr;
   return str;
 };
 
